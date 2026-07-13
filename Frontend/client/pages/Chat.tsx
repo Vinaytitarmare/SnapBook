@@ -19,7 +19,7 @@ export default function Chat() {
 
     try {
         // Call backend NLP endpoint (Mocking RAG)
-        const response = await fetch('http://localhost:3001/searchNLPSql', {
+        const response = await fetch('https://snapbook-backend-evff.onrender.com/searchNLPSql', {
             method: 'POST',
             headers: { 
               'Content-Type': 'application/json'

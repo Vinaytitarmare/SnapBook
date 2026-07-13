@@ -6,7 +6,7 @@
  */
 if (typeof pollJobStatus === 'undefined') {
     window.pollJobStatus = async function(jobId) {
-        const SERVER_URL = "http://localhost:3001";
+        const SERVER_URL = "https://snapbook-backend-evff.onrender.com";
         const maxAttempts = 60; // 120 seconds max (60 * 2s)
         
         for (let i = 0; i < maxAttempts; i++) {
@@ -233,7 +233,7 @@ if (typeof formatDataForBackend === 'undefined') {
  */
 if (typeof sendDataToBackend === 'undefined') {
     window.sendDataToBackend = async function(data) {
-        const SERVER_URL = "http://localhost:3001/receive_data?source=W";
+        const SERVER_URL = "https://snapbook-backend-evff.onrender.com/receive_data?source=W";
 
         const rawTextToSend = formatDataForBackend(data);
         

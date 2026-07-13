@@ -36,7 +36,7 @@ export default function ChatWidget() {
 
     try {
       // Ensure backend URL is correct. Adjust port if necessary.
-      const response = await fetch('http://localhost:3001/ask_nexus', {
+      const response = await fetch('https://snapbook-backend-evff.onrender.com/ask_nexus', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

@@ -1,5 +1,5 @@
 
-const BACKEND_URL = 'http://localhost:3001';
+const BACKEND_URL = 'https://snapbook-backend-evff.onrender.com';
 
 /**
  * Polls the backend job status endpoint until completion or failure.

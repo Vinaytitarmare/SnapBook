@@ -37,7 +37,7 @@ export default function MoodModal({ onClose, onResults }: Props) {
 
     try {
       // NOTE: backend runs on port 3001 by default. Change if needed.
-      const res = await fetch("http://localhost:3001/api/recommend", {
+      const res = await fetch("https://snapbook-backend-evff.onrender.com/api/recommend", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ mood }),

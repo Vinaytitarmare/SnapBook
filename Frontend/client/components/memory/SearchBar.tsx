@@ -39,7 +39,7 @@ export default function SearchBar({
           // --- Multiple Words: Call backend ---
           console.log("Multiple words detected, calling backend NLP route...");
           try {
-            const response = await fetch('http://localhost:3001/searchNLPSql', {
+            const response = await fetch('https://snapbook-backend-evff.onrender.com/searchNLPSql', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({ query: trimmedQuery })
@@ -130,7 +130,7 @@ export default function SearchBar({
     try {
       const formData = new FormData();
       formData.append('image', file);
-      const response = await fetch('http://localhost:3001/searchByImage', {
+      const response = await fetch('https://snapbook-backend-evff.onrender.com/searchByImage', {
         method: 'POST',
         body: formData,
       });
