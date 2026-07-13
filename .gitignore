@@ -1,0 +1,31 @@
+# Ignore everything in the root directory by default
+/*
+
+# EXCEPT the following folders and files
+!/Backend/
+!/Frontend/
+!/Extension/
+!.gitignore
+!README.md
+
+# ==========================================
+# SUB-FOLDER IGNORES (SECRETS & BUILD FILES)
+# ==========================================
+
+# 1. Backend Ignores
+/Backend/FastAPI_Server/.env
+/Backend/FastAPI_Server/venv/
+/Backend/FastAPI_Server/__pycache__/
+/Backend/FastAPI_Server/*.pyc
+
+# 2. Frontend Ignores
+/Frontend/.env
+/Frontend/.env.*
+/Frontend/node_modules/
+/Frontend/dist/
+/Frontend/.npm/
+/Frontend/public/snapbook-extension.zip
+
+# OSX / Windows System files
+**/.DS_Store
+**/Thumbs.db
